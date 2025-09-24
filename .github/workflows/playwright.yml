@@ -8,6 +8,9 @@ jobs:
   test:
     timeout-minutes: 60
     runs-on: ubuntu-latest
+    # strategy:
+    #   matrix:
+    #     browser: [chromium, firefox, webkit]  # run tests on 3 browsers
     steps:
     - uses: actions/checkout@v4
     - uses: actions/setup-node@v4
